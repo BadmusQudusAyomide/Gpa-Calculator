@@ -1,0 +1,99 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.course {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.course input,
+.course select {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.course select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuMTAzMTYsNkgxNy45Nzk5TDEyLjA0OTgsMTEuOTg4TDYuMTAzMTYsNloiIGZpbGw9IiM3OTc5Nzk7Ii8+Cjwvc3ZnPgo=') no-repeat right 10px center;
+    background-size: 10px;
+}
+
+.remove-course {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#add-course, #calculate-gpa {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#add-course {
+    background-color: #2ecc71;
+}
+
+#calculate-gpa {
+    margin-top: 20px;
+}
+
+#gpa-result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#gpa-value {
+    font-size: 2em;
+    color: #3498db;
+}
+
+@media (max-width: 600px) {
+    .course {
+        flex-direction: column;
+    }
+    .course input, .course select {
+        margin-bottom: 10px;
+    }
+}
